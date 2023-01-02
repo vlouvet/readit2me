@@ -1,0 +1,19 @@
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Duration</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for recording in recordings %}
+      <tr>
+        <td>{{ recording.id }}</td>
+        <td>{{ recording.title }}</td>
+        <td>{{ recording.duration }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  
